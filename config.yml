@@ -1,0 +1,19 @@
+# vouch config
+# bare minimum to get vouch running with google
+
+vouch:
+  domains:
+  - dev.fld3.xyz
+
+oauth:
+  provider: google
+  # get credentials from...
+  # https://console.developers.google.com/apis/credentials
+  client_id: 496498611215-p99uspup6djnkvpkt89igbqc6v7f53sb.apps.googleusercontent.com
+  client_secret: oBCjlkuMeZccZdTfrc5Jwun3
+  callback_urls:
+    - https://voucher.dev.fld3.xyz/auth
+#    - https://app1.dev.fld3.xyz:9090/auth
+  preferredDomain: dev.fld3.xyz
+  # endpoints set from https://godoc.org/golang.org/x/oauth2/google
+
